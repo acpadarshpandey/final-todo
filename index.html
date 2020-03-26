@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Todo</title>
+</head>
+
+<body>
+    <header>
+        <div class="heading">ToDo</div>
+    </header>
+
+    <div id="new-todo">
+        <input id="add-todo" type="text" name="add" placeholder="Add new ToDo">
+        <button class="btn" id="add-todo-button" href="#" onclick="onClick()"><i class="fa fa-plus"></i> Add</button>
+    </div>
+
+    <div id="menu">
+
+        <input class="menu" type="radio" name="filter" value="all" checked='true' > All
+        
+    </div>
+
+    <div id='loader' class='loader'>
+        <!-- show a loader when data is not fetched yet -->
+    </div>
+    <ul id="todo-list">
+        <!-- stores todo objects and display it in form od an unordered list -->
+
+    </ul>
+
+   
+    <script src="script.js"></script>
+
+</body>
+
+</html>
